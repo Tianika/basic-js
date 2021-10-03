@@ -21,7 +21,7 @@ export default {
     if (typeof position === 'number' && position < this.arr.length) {
       this.arr.splice(position - 1, 1)
     } else {
-      throw new NotImplementedError(`You can't remove incorrect link!`)
+      throw new Error(`You can't remove incorrect link!`)
     }
     return this
   },
